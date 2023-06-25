@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Bosh sahifa{% endblock title %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+    <h1 class="lw display-4 font-weight-bold">Ozodbek Rajabboyev</h1>
+    <p class="lead text-muted">Welcome to Ozodbek Rajabboyev's blog</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">
+            See all my articles
+        </a>
+    </p>
+</div>
+  <div class="card mb-3" style="max-width: 2000px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{% static 'images/my.png' %}" class="card-img" alt="my image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Ozodbek Rajabboyev</h5>
+          <p class="card-text">
+              <p class="text-info lw">Hello evereone!!!</p>
+              Ozodbek is my name. I am a boy who was born in Bukhara, 25th August 2006, as a first boy of three children.  
+              My father's name is Jasur Kholikov and my mother's name is Yuldosheva Lobar.
+          </p>
+
+          <p class="card-text">
+            My hobby is programming, travelling and reading novel. 
+            I really like programming because I am interested in programming.
+            I have created several programs so far, some of them are kinds of sites and others are computer programs.
+            I started learning programming when I was 13.
+          </p>
+
+          <p>
+              At first, I started creating computer programms, I used to type code several programming languages.For example,Python, C++, Java, Javascript, Paskal and etc.
+              C++ is the first I learned language.After then, I learned another languages like Paskal, Python, Java, Javascript.
+          </p>
+          
+          <br>
+          <p class="text-muted">
+            Copyrighted © 2020-2021 by Ozodbek Rajabboyev
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
